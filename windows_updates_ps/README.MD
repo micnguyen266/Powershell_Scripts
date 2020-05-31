@@ -27,11 +27,11 @@ To test, run the main script `windows_updates.ps1` in task scheduler and if your
 them automatically and restart your machine even while the user is still logged in. At startup, it will run the main script again until there's
 no more windows update. You should get email logs for each action it does, e.g. updating, restarting, no updates.
 
-### LogCleanup
+#### LogCleanup
 Please note there is also a LogCleanup script that will delete the LogUpdate.log file every 3 months. 
 This task runs on the 1st of January, April, July and October at 12:00AM.
 
-### Other Notes
+#### Other Notes
 The server_online.ps1 script is specific to a Puppet environment. If your Windows boxes don't run puppet you can disable this.
 This script looks for a specific Windows event based on the .xml file. It looks for when the Puppet service restarts, after it restarts
 the script will be invoked and the user will be sent an email that the Server has "restarted", this can be a false-positive if the 
