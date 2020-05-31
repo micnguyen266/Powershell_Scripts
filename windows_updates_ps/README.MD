@@ -1,3 +1,9 @@
+### Purpose
+The purpose of these Powershell Scripts is to check download and install all Windows Updates until there is no more.
+Each action will have a log emailed to the user for updating, no updating, rebooting, error, etc.
+Logs are saved in the machine the scripts are deployed in and will be deleted after 3 months.
+The goal is for a hands-off automated Windows Update solution.
+
 ### Instructions on Setting Up
 
 1. Open Task Scheduler and Import the 3 .xml files "`windows_updates.xml`", "`server_online.xml`" and "`log_cleanup.xml`". 
