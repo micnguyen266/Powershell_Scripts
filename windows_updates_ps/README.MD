@@ -37,6 +37,9 @@ This script looks for a specific Windows event based on the .xml file. It looks 
 the script will be invoked and the user will be sent an email that the Server has "restarted", this can be a false-positive if the 
 service was manually restarted.
 
+Also please note this script only works with SendGrid API. If using another API like Gmail you would have to point it to the Gmail's smtp 
+server and use their API key.
+
 #### Troubleshooting:
 If you're having issues running the "`psexec`" command. You can run these commands from PowerShell and it will open the psexec.exe file 
 from the PSTools folder already in this repo. You will be prompted to accept an EULA agreement. 
